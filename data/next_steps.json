@@ -1,0 +1,20 @@
+{
+    "next_steps_resources": [{
+          "resource_name": "Stock Broker Website",
+          "url": "Fidelity.com",
+          "resource_description": "A good platform to invest and learn about investing"
+        },
+        
+        {
+          "resource_name": "Stock Broker Website",
+          "url": "TDAmeritrade.com",
+          "resource_description": "A good platform to invest and learn about investing"
+        },
+        
+        {
+          "resource_name": "Investopedia",
+          "url": "Investopedia.com",
+          "resource_description": "A great platform to simulate the stock market and learn more about investments in general and other financial groups"
+        }
+      ]
+    }

@@ -1,0 +1,27 @@
+  {
+    "users": [{
+          
+          "first_name": "Beza",
+          "last_name": "Delelegn",
+          "email": "bezu@gmail.com",
+          "age_input": "24",
+          "password": "beza12398"
+        },
+        {
+          
+          "first_name": "Monet",
+          "last_name": "Myers",
+          "email": "monet@gmail.com",
+          "age_input": "16",
+          "password": "money23!"
+        },
+        {
+          
+          "first_name": "James",
+          "last_name": "Henry",
+          "email": "james89@gmail.com",
+          "age_input": "13",
+          "password": "54james"
+        }
+      ]
+    }
