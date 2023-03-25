@@ -15,10 +15,8 @@ app.jinja_env.auto_reload = True
 @app.route('/')
 def homepage():
     """View homepage."""
-    user_id = session.get('user_id')
-    user = crud.get_user_by_id(user_id)
-    user_name = user.first_name
-    return render_template("homepage.html", user_name=user_name)
+
+    return render_template("homepage.html")
 
 @app.route("/users", methods=["POST"])
 def register_user():
@@ -50,14 +48,18 @@ def process_login():
     password = request.form.get("password")
 
     user = crud.get_user_by_email(email)
+    
     if not user or user.password != password:
         flash("The email or password you entered was incorrect.")
+        return render_template("homepage.html")
     else:
         session["user_email"] = user.email
         session['user_id'] = user.user_id
         flash(f"Welcome back, {user.first_name}!")
 
-    return redirect("/dashboard")        
+        return redirect("/dashboard")    
+
+
 @app.route('/dashboard_data')
 def word_quiz():
 
