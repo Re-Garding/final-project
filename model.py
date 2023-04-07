@@ -2,6 +2,8 @@
 
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+import json
+from json import JSONEncoder
 
 db = SQLAlchemy()
 class User(db.Model):

@@ -1,5 +1,4 @@
-  {
-    "users": [{
+[{
           
           "first_name": "Beza",
           "last_name": "Delelegn",
@@ -24,4 +23,4 @@
           "password": "54james"
         }
       ]
-    }
+    

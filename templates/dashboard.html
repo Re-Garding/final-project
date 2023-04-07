@@ -1,18 +1,33 @@
 {% extends 'base.html' %}
-{% block title %}users by id{% endblock %}
+{% block title %} {% endblock %}
 
 {% block body %}
-  <!-- <h1></h1> -->
 
-  <ul>
-    {% for user in users %}
-      <li>
-        <a href="/dashboard/{{ users.user_id }}">
-        {{ users.email}} 
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+<body>
+<div id="dashb" class = "dashboard_style" >
+    <h3> Welcome to the dashboard {{user_name}} complete your daily questions, review the word of the day, and jot down 
+        some notes.You are one step further in your journey to understand the world of finance!
+    </h3>
+    <br><br/>
+    <h3> Question of the Day </h3>
+
+</div>
+</body>
+
+<script src ="/static/project.js">
+</script>
+
+
+
+
 {% endblock %}
+
+
+
+
+
+
+
+
 
 

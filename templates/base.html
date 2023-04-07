@@ -3,15 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/project.css">
     <title>
       {% block title %}{% endblock %}
     </title>
 
     {% block head %}{% endblock %}
   </head>
+  <ul class="active">
+    <li><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/notepage">Notes</a></li>
+    <li><a href="/nextsteps">Resources</a></li>
+  </ul>
   <body>
+    {% for msg in get_flashed_messages() %}
+      <p class="flash-msg">
+        {{ msg }}
+      </p>
+    {% endfor %}
+
+
+
     {% block body %}{% endblock %}
 
     {% block after_body %}{% endblock %}
+  
   </body>
+
+  
 </html>
+
+
+
+
+
+
+

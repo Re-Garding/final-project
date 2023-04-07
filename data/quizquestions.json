@@ -1,7 +1,6 @@
-{
-    "quizquestions12-14": [ { 
+
+[ { 
       
-          "quiz_of_day_id": "1",
           "question": "What is an allowance?",
           "answer_choice_1": "having money and holding on to it for a longer time",
           "answer_choice_2": "when something has a inital starting point and gradually gets bigger over time ",
@@ -17,7 +16,7 @@
           "age_input" : "12 "
         },
         
-        { "quiz_of_day_id": "2",
+        { 
           "question": "What are some things you can save for?",
           "answer_choice_1": "Things that are wants like games, toys, and needs like food and water",
           "answer_choice_2": "wrong answer",
@@ -34,7 +33,7 @@
         },
         
         {
-          "quiz_of_day_id": "3",
+          
           "question": "Which of the following can't grow?",
           "answer_choice_1": "plants (like trees)",
           "answer_choice_2": "humans grow to become adults ",
@@ -48,14 +47,10 @@
           "incorrect_answer_feedback" : "incorrect feedback ",
           
           "age_input" : "13 "
-        }
-      ]
-    
-    
-    
-    ,"quizquestion14-17": [
+        },
+      
         {
-          "quiz_of_day_id": "1",
+          
           "question": "What are some good ways to use a credit card?",
           "answer_choice_1": "grocerries to get food and to pay gas to show I am using the card properly to the credit card guys",
           "answer_choice_2": "monthly video games subscription",
@@ -72,7 +67,7 @@
         },
         
         {
-          "quiz_of_day_id": "2",
+          
           "question": "What is a HYSA?",
           "answer_choice_1": "An account that brings higher levels of interest that normal savings accounts at banks",
           "answer_choice_2": "A savings account that barley grows",
@@ -90,7 +85,7 @@
         ,
         
         {
-          "quiz_of_day_id": "3",
+          
           "question": "What are some things you may need loans for?",
           "answer_choice_1": "School",
           "answer_choice_2": "Buying A car",
@@ -104,12 +99,10 @@
           "incorrect_answer_feedback" : "incorrect feedback ",
           
           "age_input" : "15 "
-        }
-      ]
-       
-      ,"quizquestion18+": [
+        },
+      
         {
-          "quiz_of_day_id": "1",
+          
           "question": "What is Stock?",
           "answer_choice_1": "ownership of a company interchangable with shares ",
           "answer_choice_2": "Investments in public companies you are interested in becaause you think they have the potential to grow",
@@ -126,7 +119,7 @@
         },
         
         {
-          "quiz_of_day_id": "2",
+          
           "question": "When I get my paycheck what is something that is taken out? and what is the proper term?",
           "answer_choice_1": "taxes are taken out and deposit is the proper term",
           "answer_choice_2": "taxes are taken out and withholding is the proper term ",
@@ -144,7 +137,7 @@
         
         ,
         {
-          "quiz_of_day_id": "3",
+          
           "question": "Can interest be both good and bad?",
           "answer_choice_1": "Yes, having interest can be great and you are investing your money and having a return by holding it for several years. However, having interest on borrowed money can be a bad thing if it is not paid fully in a resonable amount of time",
           "answer_choice_2": "interest is only a bad thing and related to credit cards not being paid on time",
@@ -160,7 +153,7 @@
           "age_input" : "21"
         }
       ]
-  }
+
   
   
   

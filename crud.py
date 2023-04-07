@@ -8,7 +8,6 @@ def create_user(first_name, last_name , email,age_input, password):
     user = User(first_name=first_name, last_name=last_name , email=email,age_input=age_input, password=password)
     db.session.add(user)
     db.session.commit()
-
     return user
 
 def create_wordofday(datetime, user_id , dict_key_id,finished_true_false):
@@ -17,13 +16,12 @@ def create_wordofday(datetime, user_id , dict_key_id,finished_true_false):
     wordofday = DailyWords(datetime=datetime, user_id = user_id, dict_key_id = dict_key_id,finished_true_false = finished_true_false)
     db.session.add(wordofday)
     db.session.commit()
-
     return wordofday
 
-def create_dictionary_words(definition, age_input ):
+def create_dictionary_words(dict_key_id,definition, age_input ):
     """Create and return dictionary words."""
 
-    dictionary_words = DictionaryWords(definition = definition, age_input = age_input)
+    dictionary_words = DictionaryWords(dict_key_id = dict_key_id, definition = definition, age_input = age_input)
     db.session.add(dictionary_words)
     db.session.commit()
     return dictionary_words 
@@ -36,16 +34,18 @@ def create_daily_quiz_of_day (user_id , datetime, finished_true_false,correct_tr
     db.session.commit()
     return daily_quiz_of_day
 
-def create_quiz_questions(question,answer_choice_1 ,answer_choice_2,answer_choice_3, answer_choice_4):
+def create_quiz_questions(question,answer_choice_1 ,answer_choice_2,answer_choice_3, answer_choice_4,correct_answer_reasoning,incorrect_answer_feedback,age_input):
     """Create and return quiz questions."""
 
-    quiz_questions = QuizQuestions(question=
-    question,
+    quiz_questions = QuizQuestions(
+    question=question,
     answer_choice_1=answer_choice_1,
     answer_choice_2=answer_choice_2,
     answer_choice_3=answer_choice_3,
-    answer_choice_4=answer_choice_4 )
-    
+    answer_choice_4=answer_choice_4,
+    correct_answer_reasoning=correct_answer_reasoning,
+    incorrect_answer_feedback= incorrect_answer_feedback,
+    age_input=age_input)
     return quiz_questions
 
 def create_claimed_rewards(user_id , rewards, datetime,claimed_true_false):
@@ -100,6 +100,24 @@ def get_users():
     return User.query.all()
 
 
+def get_notes():
+    """Return all users."""
+
+    return NotePage.query.all()
+
+
+def get_dictionarywords():
+    """Return all users."""
+
+    return DictionaryWords.query.all()
+
+
+def get_quizquestions():
+    """Return all users."""
+
+    return QuizQuestions.query.all()
+
+
 def get_user_by_id(user_id):
     """Return a user by primary key."""
 
@@ -111,6 +129,12 @@ def get_user_by_email(email):
 
     return User.query.filter(User.email == email).first()
 
+
+def get_note(user_id):
+    """Return a note by id"""
+
+    return NotePage.query.filter(NotePage.user_id == user_id).all()
+    
 
 if __name__ == "__main__":
     from server import app

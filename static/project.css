@@ -1,0 +1,102 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:  700;
+}
+body {
+  display:flex;
+  background-color: #fefae0;
+  font-family: 'Trocchi', serif;
+  flex-direction: column;
+  align-items: center;
+  font-weight: Regular;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+#books-img {
+  width: 20em;
+  height: 20em;
+}
+
+#header_styles {
+  color: #656D4A;
+  width: 800px;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+#paragraph_styles {
+  width: 400px;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+.item {
+  margin: 5px;
+  max-width: 300px;
+  float:right;
+  border-radius: 25px;
+  vertical-align: bottom;
+}
+
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  float:right;
+  vertical-align: bottom;
+}
+
+.nextsteps{
+  display:flex;
+  background-color: #fefae0;
+  font-family: "Raleway", sans-serif;
+}
+.active {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #A4AC86;
+}
+
+
+button{
+  color:#fefae0;
+  background-color: #A4AC86;
+}
+
+textarea{
+  background-color: #fefae0;
+  font-weight:  Regular Italic;
+  font-size: 24px;
+}
+
+#note_page {
+  color: #656D4A;
+  width: 800px;
+  word-wrap: break-word;
+  display: inline-block;
+
+}
+
+.dashboard_style{
+color: #A4AC86;
+}
+
+
+
